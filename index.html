@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/formulario.png">
+        </div>
+        <div class="form">
+            <form id="cadastroformu">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro de cliente</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="birth">Data de Nascimento</label>
+                        <input id="birth" type="date" name="birth" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="id">ID</label>
+                        <input id="id" type="text" name="id" placeholder="Digite seu ID" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="endereço">Endereço</label>
+                        <input id="endereço" type="text" name="endereço" placeholder="Digite seu endereço" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rua">Rua</label>
+                        <input id="rua" type="text" name="rua" placeholder="Digite o nome da rua" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="Digite seu CEP" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="vendedor">Vendedor</label>
+                        <input id="vendedor" type="text" name="vendedor" placeholder="Preencha esse campo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="limite">Limite de crédito</label>
+                        <input id="limite" type="text" name="limite" placeholder="Digite o limite" required>
+                    </div>
+
+                </div>
+
+                <div class="cliente-inputs">
+                    <div class="cliente-title">
+                        <h6>Tipo de cliente</h6>
+                    </div>
+
+                    <div class="cliente-group">
+                        <div class="cliente-input">
+                            <input id="fisica" type="radio" name="type">
+                            <label for="fisica">Pessoa Física</label>
+                        </div>
+
+                        <div class="cliente-input">
+                            <input id="juridica" type="radio" name="type">
+                            <label for="juridica">Pessoa Jurídica</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button type="submit" class="submit-button">Cadastrar</button>
+                </div>
+            </form>
+            <div id="errormessage" class="error-message"></div>
+            <div id="successmessage" class="success-message"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
